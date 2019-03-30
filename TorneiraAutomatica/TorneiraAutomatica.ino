@@ -78,10 +78,8 @@ void loop()
 
   if (aberta && (millis() - timeout >= tempo_max_aberta))
   {
-    aberta = false;
     menor_valor = false;
-    digitalWrite(led_pin_azul, LOW);
-    digitalWrite(rele_pin, HIGH);
+    desliga_torneira();
   }
 }
 
